@@ -12,24 +12,23 @@
         
     </style>
 </head>
-    
 <body>
     <h1>Mundo, nova linguagem</h1><!---comentario em HTML-->
     <p>Com o tempo tudo se resolvera</p>
 
     <script>
-        // usado para comentar uma linha
+       var num1 = Number.parseInt(window.prompt('Digite um numero: '))
+       //Number.parseInt ou Number.parseFloat == converte o numero recebido em numero
 
-        /*usado para         texto texto
-        fazer uma aréa de comentario */
-        var nome_primeiro = window.prompt('Qual o seu Primeiro Nome?')  //o usuario insere um dado
-        var nome_segundo = window.prompt('Seu sobrenome')
+       var num2 = Number.parseFloat(window.prompt('Digite o segundo numero:'))
+        
+       window.alert('Você digitou: '+ num1 + ' e ' + num2 + ' ! ' )
+        soma = (num1 + num2)
+        
+       window.alert('A soma dos numeros é: '+ soma)
 
-        var nomecompleto = nome_primeiro +' '+ nome_segundo
 
-        window.alert('seu nome completo é: '+ nomecompleto)
-        window.alert(nomecompleto)
-        //var nome_completo = (nome_primeiro + nome_segundo);
+        
 
        
 
