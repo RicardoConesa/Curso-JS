@@ -21,11 +21,16 @@
        //Number.parseInt ou Number.parseFloat == converte o numero recebido em numero
 
        var num2 = Number.parseFloat(window.prompt('Digite o segundo numero:'))
-        
+
+       //testando Number sem ParseInt
+       var num3 = Number(window.prompt('Multiplique a soma dos numero por : '))
+
        window.alert('Você digitou: '+ num1 + ' e ' + num2 + ' ! ' )
         soma = (num1 + num2)
-        
-       window.alert('A soma dos numeros é: '+ soma)
+        cal1 = (num3 * (soma))
+       window.alert('A soma dos 2 primeiros numeros é: '+ soma)
+
+       window.alert('A multiplicação da soma é : '+ cal1)
 
 
         
