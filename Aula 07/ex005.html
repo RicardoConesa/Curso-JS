@@ -21,14 +21,23 @@
     <h1> Aula Dom - Document object Model </h1>
     <p>Aqui vai o Resultado </p>
     <p>aprendedo a usar <strong>DOM</strong> com java script</p>
-    <div>Clique Aqui</div>
-
+    <div id = 'msg'>Clique Aqui</div>
+     <!-- declarando ID na div -->
     <script>
+        var corpo = window.document.body 
+        //pego o elemento body e declaro em uma variavel
         var p1 = window.document.getElementsByTagName('p')[0]
+        //pego o elemento <p>   [] defino qual dos <p> selecionei
         
-        window.document.write(p1.innerText)
-        
+        var d = window.document.getElementById('msg') 
+        //selecionando o elemento por id   
+        d.style.background = 'green'
 
+         window.document.write('copia do paragrafo 1 ' + p1.innerText)
+
+         corpo.style.background = 'black'
+         p1.style.color = 'blue'
+        // variavel.elemento.parametro = alteração    
     </script>
     
 </body>
