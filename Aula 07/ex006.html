@@ -19,26 +19,31 @@
 </head>
 <body>
 
-    <div id="area" onclick="clicar()" onmouseenter="setmouse()" onmouseout="outmouse()">
+    <div id="area" >
         interaja
     </div>
 
     <script>
           var da=  window.document.getElementById('area')
+          da.addEventListener('click',clicar)
+          da.addEventListener('mouseenter',entrar)
+          da.addEventListener('mouseout', outmouse)
+    
         function clicar(){
           da.style.color = 'red'
           da.innerText = 'Você Clicou'
-          
-        }
+         }
 
-        function setmouse(){
-           
-            da.style.background = 'blue'
+        function entrar(){
+          da.style.background = 'blue'
+          da.textContent = 'Agora Click'
+          da.style.color = 'white'
         }
 
         function outmouse(){
             da.style.background = 'green'
-
+            da.textContent = 'Volte Aqui'
+            da.style.color = 'white'
         }
     </script>
     
